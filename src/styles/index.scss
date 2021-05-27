@@ -1,0 +1,36 @@
+$theme-colors: (
+  "primary": #6200ea,
+  "danger": #f50057,
+  "success" : #33691e,
+  "warning" : #ffab00,
+  "light" : #f7f7f7
+);
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+body{
+    padding-top: 5rem;
+    background-color: #f7f7f7;
+}
+
+.actions{
+opacity: 0;
+}
+.data-row:hover{
+  background-color: rgb(240, 240, 240);
+}
+
+tr:hover .actions{
+  opacity: 1;
+}
+
+tbody td a{
+  color: #222;
+  &:hover{
+    color: #222;
+  }
+}
+
+.actions span:hover{
+  cursor: pointer;
+}
